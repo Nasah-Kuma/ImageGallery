@@ -5,7 +5,6 @@ let images = [];
 let descriptions = [];
 
 function openModal(imageSrc, description) {
-    console.log(description);
     const modal = document.getElementById('modal');
     const modalImage = document.getElementById('modalImage');
     const modalDescription = document.getElementById('modalDescription');
@@ -34,8 +33,7 @@ function showPreviousImage() {
 
 window.onload = function () {
     const thumbnailImages = document.querySelectorAll('.thumbnails img');
-    thumbnailImages.forEach(function (thumbnail, index) {
-        console.log(thumbnail.src)
+    thumbnailImages.forEach(function (thumbnail) {
         images.push(thumbnail.src);
         descriptions.push(thumbnail.alt);
         thumbnail.setAttribute('tabindex', '0');
