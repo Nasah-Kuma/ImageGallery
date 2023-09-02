@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <h1>Welcome to Nasah's Image Gallery</h1>
+    <div class="gallery">
+        <div class="thumbnails">
+          <img src="images/bitcoin.jpeg" alt="bitcoin logo" onclick="openModal('images/bitcoin.jpeg', 'This is the bitcoin logo')">
+          <img src="images/women_in_blockchain-group.jpeg" alt="WIB logo" onclick="openModal('images/women_in_blockchain-group.jpeg', 'This is the women in blockchain logo')">
+          <img src="images/bitcoin.jpeg" alt="bitcoin logo" onclick="openModal('images/bitcoin.jpeg', 'This is the bitcoin logo')">
+          <img src="images/women_in_blockchain-group.jpeg" alt="WIB logo" onclick="openModal('images/women_in_blockchain-group.jpeg', 'This is the women in blockchain logo')">
+          <img src="images/bitcoin.jpeg" alt="bitcoin logo" onclick="openModal('images/bitcoin.jpeg', 'This is the bitcoin logo')">
+          <img src="images/women_in_blockchain-group.jpeg" alt="WIB logo" onclick="openModal('images/women_in_blockchain-group.jpeg', 'This is the women in blockchain logo')">
+        </div>
+        <div id="modal" class="modal">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <img id="modalImage" src="" alt="">
+          <div id="modalDescription"></div>
+        </div>
+      </div>
+    <script src="main.js"></script>
+</body>
+</html>
